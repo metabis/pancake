@@ -17,8 +17,8 @@
 if (isset($_POST['pseudo']) and isset($_POST['message']) //Si les messages existent
     if($_POST['pseudo'] != NULL and $_POST['message'] != NULL) //Si les deux champs sont bien rempli
     //On se connecte à MySQL
-    mysql_connect("nom_du_serveur", "nom_de_l'utilisateur", "mot_de_passe");
-    mysql_select_db("nom_de_votre_base_de_donnee");
+    mysql_connect("mysql:host=localhost", "root", "");
+    mysql_select_db("mydbtest");
     // On utilise la fonction PHP htmlentities pour éviter d'enregistrer du code HTML dans la table
     $pseudo = htmlentities ($_POST['pseudo']);
     $message = htmlentities ($_POST['message']);
@@ -39,8 +39,8 @@ Votre message : <input type="text" name="message" /><br />
 <?php
 // Maintenant on doit récupérer les 10 dernières entrées de la table
 // On se connecte d'abord à MySQL :
-mysql_connect("nom_du_serveur", "nom_de_l'utilisateur", "mot_de_passe");
-mysql_select_db("nom_de_votre_bdd");
+mysql_connect("mysql:host=localhost", "root", "");
+mysql_select_db("mydbtest");
 // On utilise la requête suivante pour récupérer les 10 derniers messages :
 $reponse = mysql_query("SELECT * FROM minichat ORDER BY ID DESC LIMIT 0,10");
 // On se déconnecte de MySQL
