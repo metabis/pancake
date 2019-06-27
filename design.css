@@ -1,4 +1,4 @@
-html,body 
+html,body
 {
 
 background-color: #4476c2;
@@ -8,23 +8,22 @@ margin:auto;
 color: white;
 }
 
-#global 
+#global
 {
 
 width: 830px;
-background-image: url("fondpagebas.png");
 margin-left: auto;
 margin-right: auto;
 border-left: 10px solid midnightblue;
 border-right: 10px solid midnightblue;
 
-} 
+}
 
 #entete
 {
 	height: 200px;
 	width: 700px;
-	background-image: url("logo.JPG");
+	background-image:;
 	background-repeat: no-repeat;
 	margin-left: auto;
 margin-right: auto;
@@ -41,7 +40,7 @@ margin-right: auto;
 {
 	width: 150px;
 	padding-bottom: 170px;
-	   border: #94a3d8 1px solid; 
+	   border: #94a3d8 1px solid;
 	   background-color: #6075c3;
 	   color: #ffffff;
 margin-top: 22px;
@@ -50,7 +49,7 @@ margin-top: 22px;
 #pieddepage
 {
 	height: 30px;
-	
+
 	text-align: center;
 	background-color: #ffffff;
 	border: #000000 1px solid;
@@ -58,12 +57,12 @@ margin-top: 22px;
 
 }
 
-li.bouton_gauche 
+li.bouton_gauche
 {
    float : right;
 }
 
-li.bouton_droite 
+li.bouton_droite
 {
    float : right;
 }
@@ -87,12 +86,12 @@ li
 
 a
 {
-   text-decoration: none; /* Les liens ne seront plus soulignés */
+   text-decoration: none; /* Les liens ne seront plus soulignï¿½s */
    color: #ffffff; /* Les liens seront en rouge au lieu de bleu */
 
 }
 a:hover /* Quand le visiteur pointe sur le lien */
 {
-   text-decoration: underline; /* Le lien deviendra souligné quand on pointera dessus */
+   text-decoration: underline; /* Le lien deviendra soulignï¿½ quand on pointera dessus */
    color: #1b75ba;
 }
