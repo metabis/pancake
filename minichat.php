@@ -25,7 +25,7 @@
 // Connexion à la base de données
 try
 {
-	$bdd = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'test', 'password');
+	$bdd = new PDO('mysql:host=localhost;dbname=mydbtest;charset=utf8', 'root', '');
 }
 catch(Exception $e)
 {

@@ -1,0 +1,98 @@
+html,body 
+{
+
+background-color: #4476c2;
+margin-top: 0px;
+margin-bottom: 0px;
+margin:auto;
+color: white;
+}
+
+#global 
+{
+
+width: 830px;
+background-image: url("fondpagebas.png");
+margin-left: auto;
+margin-right: auto;
+border-left: 10px solid midnightblue;
+border-right: 10px solid midnightblue;
+
+} 
+
+#entete
+{
+	height: 200px;
+	width: 700px;
+	background-image: url("logo.JPG");
+	background-repeat: no-repeat;
+	margin-left: auto;
+margin-right: auto;
+}
+
+#corps
+{
+	width: 600px;
+	float: right;
+        color: #ffffff;
+}
+
+#menuvertical
+{
+	width: 150px;
+	padding-bottom: 170px;
+	   border: #94a3d8 1px solid; 
+	   background-color: #6075c3;
+	   color: #ffffff;
+margin-top: 22px;
+}
+
+#pieddepage
+{
+	height: 30px;
+	
+	text-align: center;
+	background-color: #ffffff;
+	border: #000000 1px solid;
+        clear: both;
+
+}
+
+li.bouton_gauche 
+{
+   float : right;
+}
+
+li.bouton_droite 
+{
+   float : right;
+}
+ul
+{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 26px;
+	margin-left: 20px;
+}
+
+li
+{
+	list-style-image : none;
+	padding-top: 0px;
+	margin-top: 0px;
+	color: rgb (47, 152, 233);
+	font-size: 0.85em;
+}
+
+a
+{
+   text-decoration: none; /* Les liens ne seront plus soulignés */
+   color: #ffffff; /* Les liens seront en rouge au lieu de bleu */
+
+}
+a:hover /* Quand le visiteur pointe sur le lien */
+{
+   text-decoration: underline; /* Le lien deviendra souligné quand on pointera dessus */
+   color: #1b75ba;
+}

@@ -1,0 +1,386 @@
+/*
+  The original SubSilverPlus Theme for phpBB version 2+
+  Created by reddog
+  http://www.reddevboard.com/
+*/
+
+html,body 
+{
+	background-color: #4476c2;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin:auto;
+	color: white;
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+}
+
+#global 
+{
+	width: 830px;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: 10px solid midnightblue;
+	border-right: 10px solid midnightblue;
+	background-image: url("images/fondpagebas.png");
+} 
+
+#entete
+{
+	height: 200px;
+	width: 700px;
+	padding: 0px;
+	margin-bottom: 15px;
+	margin-left: 200px;
+	background-repeat: no-repeat;
+}
+
+#corps
+{
+	margin-top: 22px;
+	width: 600px;
+	float: right;
+	color: #ffffff;
+}
+
+#menuvertical
+{
+	width: 150px;
+	padding-bottom: 170px;
+	border: #94a3d8 1px solid; 
+	background-color: #6075c3;
+	margin-top: 22px;
+	color: #ffffff;
+	height: 65px;
+}
+
+#pieddepage
+{
+	height: 30px;
+	text-align: center;
+	background-color: #ffffff;
+	border: #000000 1px solid;
+	clear: both;
+
+}
+
+li.bouton_gauche 
+{
+   float : right;
+}
+
+li.bouton_droite 
+{
+   float : right;
+}
+ul
+{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 26px;
+	margin-left: 20px;
+}
+
+li
+{
+	list-style-image : none;
+	padding-top: 0px;
+	margin-top: 0px;
+	color: rgb (47, 152, 233);
+	font-size: 0.85em;
+}
+
+a
+{
+   text-decoration: none; /* Les liens ne seront plus soulignés */
+   color: #ffffff; /* Les liens seront en rouge au lieu de bleu */
+
+}
+a:hover /* Quand le visiteur pointe sur le lien */
+{
+   text-decoration: underline; /* Le lien deviendra souligné quand on pointera dessus */
+   color: #1b75ba;
+}
+
+.inset
+{
+	border: 3px inset black;
+}
+
+#cadre /* Propriétés qui s'appliquent au cadre en général */
+{
+	width: 200px;
+	background-color: #eeeeee;
+}
+
+.imageflottante
+{
+	float:left;
+}
+
+
+.forumline {
+	background-color : #ffffff;
+	border : 2px solid #006699;
+}
+
+td.row1 {
+	background-color : #eaedf4;
+}
+td.row2 {
+	background-color : #d9e2ec;
+}
+td.row3 {
+	background-color : #cedcec;
+}
+td.rowpic {
+	background-color : #ffffff;
+	background-image : url('./images/css/cellpic2.jpg');
+	background-repeat : repeat-y;
+}
+th {
+	color : #deeef3;
+	font-size : 11px;
+	font-weight : bold;
+	background-color : #0060b5;
+	height : 25px;
+	background-image : url('./images/css/cellpic3.gif');
+}
+td.cat, td.catHead, td.catSides, td.catLeft, td.catRight, td.catBottom {
+	background-image : url('./images/css/cellpic1.gif');
+	background-color : #eaedf4;
+	border : #ffffff;
+	border-style : solid;
+	height : 28px;
+}
+td.cat, td.catHead, td.catBottom {
+	height : 29px;
+	border-width : 0;
+}
+th.thHead, th.thSides, th.thTop, th.thLeft, th.thRight, th.thBottom, th.thCornerL, th.thCornerR {
+	font-weight : bold;
+	border : #ffffff;
+	border-style : solid;
+	height : 28px;
+}
+td.row3Right, td.spaceRow {
+	background-color : #cedcec;
+	border : #ffffff;
+	border-style : solid;
+}
+td.mpBar {
+	border-left: 1px #BFCEDF solid;
+	border-top: 1px #BFCEDF solid;
+	border-right: 1px #EBF0F5 solid;
+	border-bottom: 1px #EBF0F5 solid;
+	background-color: #DCE4ED;
+}
+th.thHead, td.catHead {
+	font-size : 12px;
+	border-width : 1px 1px 0;
+}
+th.thSides, td.catSides, td.spaceRow {
+	border-width : 0 1px;
+}
+th.thRight, td.catRight, td.row3Right {
+	border-width : 0 1px 0 0;
+}
+th.thLeft, td.catLeft {
+	border-width : 0 0 0 1px;
+}
+th.thBottom, td.catBottom {
+	border-width : 0 1px 1px;
+}
+th.thTop {
+	border-width : 1px 0 0;
+}
+th.thCornerL {
+	border-width : 1px 0 0 1px;
+}
+th.thCornerR {
+	border-width : 1px 1px 0 0;
+}
+.maintitle {
+	font-weight : bold;
+	font-size : 22px;
+	font-family : "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-decoration : none;
+	line-height : 120%;
+	color : #000000;
+}
+.gen {
+	font-size : 12px;
+}
+.genmed {
+	font-size : 11px;
+}
+.gensmall {
+	font-size : 10px;
+}
+.gen, .genmed, .gensmall {
+	color : #000000;
+}
+a.gen, a.genmed, a.gensmall {
+	color : #006699;
+	text-decoration : none;
+}
+a.gen:hover, a.genmed:hover, a.gensmall:hover {
+	color : #7a9ec5;
+	text-decoration : none;
+}
+.mainmenu {
+	font-size : 11px;
+	color : #000000;
+}
+a.mainmenu {
+	text-decoration : none;
+	color : #006699;
+}
+a.mainmenu:hover {
+	text-decoration : none;
+	color : #7a9ec5;
+}
+.cattitle {
+	font-weight : bold;
+	font-size : 12px;
+	letter-spacing : 1px;
+	color : #006699;
+}
+a.cattitle {
+	text-decoration : none;
+	color : #006699;
+}
+a.cattitle:hover {
+	text-decoration : none;
+}
+.postdetails {
+	font-size : 10px;
+	color : #000000;
+}
+.postbody {
+	font-size : 12px;
+}
+.code {
+	font-family : Courier, 'Courier New', sans-serif;
+	font-size : 11px;
+	color : #006600;
+	border-left: 1px #BFCEDF solid;
+	border-top: 1px #BFCEDF solid;
+	border-right: 1px #EBF0F5 solid;
+	border-bottom: 1px #EBF0F5 solid;
+	background-color: #E1E9F0;
+}
+.quote {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color : #444444;
+	line-height : 125%;
+	border-left: 1px #BFCEDF solid;
+	border-top: 1px #BFCEDF solid;
+	border-right: 1px #EBF0F5 solid;
+	border-bottom: 1px #EBF0F5 solid;
+	background-color: #E1E9F0;
+}
+.copyright {
+	font-size : 10px;
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color : #444444;
+	letter-spacing : -1px;
+	text-align: center;
+}
+a.copyright {
+	color : #444444;
+	text-decoration : none;
+}
+a.copyright:hover {
+	color : #000000;
+	text-decoration : underline;
+}
+textarea, select {
+	color : #000000;
+	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+	border-left: 1px #BFCEDF solid;
+	border-top: 1px #BFCEDF solid;
+	border-right: 1px #EBF0F5 solid;
+	border-bottom: 1px #EBF0F5 solid;
+	background-color: #DCE4ED;
+}
+input.post, textarea.post, select {
+	border-left: 1px #BFCEDF solid;
+	border-top: 1px #BFCEDF solid;
+	border-right: 1px #EBF0F5 solid;
+	border-bottom: 1px #EBF0F5 solid;
+	background-color: #DCE4ED;
+}
+input.post:focus,textarea.post:focus {
+	background-color: #E1E9F0;
+}
+input {
+	text-indent : 2px;
+	color : #000000;
+	font : normal 11px Verdana, Arial, Helvetica, sans-serif;
+}
+input.mainoption {
+	background-color: #ecf0f6;
+	color: #333;
+	font-weight : bold;
+	border: solid 1px #AFC2D8;
+}
+input.button,input.liteoption {
+	background-color: #ecf0f6;
+	color: #333;
+	border: solid 1px #AFC2D8;
+}
+
+input:focus,textarea:focus {
+	background-color: #EAEDF4;
+	border: 1px dashed #a9afe7;
+}
+
+input.button:hover,input.mainoption:hover,input.liteoption:hover {
+	border-color: #006699;
+}
+input.button:focus,input.mainoption:focus,input.liteoption:focus {
+	color: #333; border-color: #006699;
+}
+
+label {
+	cursor : pointer;
+}
+
+legend {
+	background: #6075C3;
+	border: 1px solid #0ea1c8;
+}
+
+fieldset {
+	background: #6075C3;
+	border: 1px solid #0ea1c8;
+}
+
+#menu .blocmenu {
+  background-color:#F4F9FD;
+  margin: 0px;
+  margin-bottom:10px;
+  border: 1px solid #737373;
+}
+
+.hover {
+  border: 0px;
+  padding: 1px;
+}
+
+.hover:hover {
+  border: 0px;
+  padding: 1px;
+}
+
+pre {
+	font-size: 12px;
+	font-style: normal;
+	line-height: 5px;
+	font-weight: normal;
+	color: #000000;
+	font-family: "Courier New", Courier, mono;
+}
