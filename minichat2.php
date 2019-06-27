@@ -28,8 +28,8 @@ if (isset($_POST['pseudo']) and isset($_POST['message']) //Si les messages exist
     mysql_connect("localhost", "root", "");
     mysql_select_db("minichat");
     // On utilise la fonction PHP htmlentities pour éviter d'enregistrer du code HTML dans la table
-    $pseudo = htmlentities ($_POST['pseudo']);
-    $message = htmlentities ($_POST['message']);
+    $pseudo = htmlspecialchars ($_POST['pseudo']);
+    $message = htmlspecialchars ($_POST['message']);
     //On enregistre dans la table minichat
     mysql_query("INSERT INTO minichat VALUES('', '$pseudo', '$message')");
     //On se déconnecte de MySQL
