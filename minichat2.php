@@ -22,11 +22,12 @@
     </form>
 
 <?php
-if (isset($_POST['pseudo']) and isset($_POST['message']) //Si les messages existent
-    if($_POST['pseudo'] != NULL and $_POST['message'] != NULL) //Si les deux champs sont bien rempli
     //On se connecte à MySQL
-    mysql_connect("localhost", "root", "");
+    mysql_connect("mysql:host=localhost", "root", "");
     mysql_select_db("minichat");
+
+    if (isset($_POST['pseudo']) and isset($_POST['message']) //Si les messages existent
+        if($_POST['pseudo'] != NULL and $_POST['message'] != NULL) //Si les deux champs sont bien rempli
     // On utilise la fonction PHP htmlentities pour éviter d'enregistrer du code HTML dans la table
     $pseudo = htmlspecialchars ($_POST['pseudo']);
     $message = htmlspecialchars ($_POST['message']);
