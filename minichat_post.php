@@ -1,19 +1,23 @@
+
+
 <?php
-
-// Connexion à la base de données
-try
+// Maintenant on doit récupérer les 10 dernières entrées de la table
+// On se connecte d'abord à MySQL :
+mysql_connect("localhost", "root", "");
+mysql_select_db("minichat");
+// On utilise la requête suivante pour récupérer les 10 derniers messages :
+$reponse = mysql_query("SELECT * FROM minichat ORDER BY ID DESC LIMIT 0,10");
+// On se déconnecte de MySQL
+mysql_close();
+// Puis on fait une boucle pour afficher tous les résultats :
+while($donnees = mysql_fetch_array($reponse))
 {
-	$bdd = new PDO('mysql:host=localhost;dbname=minichat;charset=utf8', 'root', '');
-}
-catch(Exception $e)
-{
-        die('Erreur : '.$e->getMessage());
-}
+?>
 
-// Insertion du message à l'aide d'une requête préparée
-$req = $bdd->prepare('INSERT INTO minichat (pseudo, message) VALUES(?, ?)');
-$req->execute(array($_POST['pseudo'], $_POST['message']));
+<p><strong><?php echo$donnees['pseudo']; ?></strong> : <?php echo $donnees['message']; ?></p>
 
-// Redirection du visiteur vers la page du minichat
+<?php
+}
+// Fin de la boucle, le script est terminé !
 header('Location: minichat.php');
 ?>
