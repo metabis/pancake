@@ -11,34 +11,25 @@
 <div id="global">
 <table border = 0 >
   <tr>
-<td colspan=0><img src="banpub.png" div="entete" ></td>
+<td><img src="banpub.png" div="entete" ></td>
   </tr>
- <tr>
- <td height=20px> &nbsp;  </td>
- <td >&nbsp;</td>
 
- </tr>
  <tr>
    <td >&nbsp;</td>
-   <td valign=top>
+<tr><td>
    <?php include('menu.php');
-   ?></tr></td>
+   ?></td></tr>
    <tr>
-     
- <td><div id="corps.php"><?php
+
+ <td><div id="corps"><?php
    include('corps.php');
     ?>
+</td></tr>
+	</div>
 
-	</div></td>
-	 </div></td>
- </tr>
- <tr>
- <td heigh=20px> &nbsp;  </td>
- <td >&nbsp;</td>
 
- </tr>
  <tr>
- <td colspan=3> <?php include('pied_de_page.php');
+ <td> <?php include('pied_de_page.php');
 ?></td>
  </tr>
  </table>
