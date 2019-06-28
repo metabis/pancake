@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 
 <head>
-  <title>SkyStation</title>
+  <title>Site</title>
   <link rel="stylesheet" href="design.css" type="text/css" title="Design" />
 </head>
 <body>
@@ -19,16 +19,18 @@
 
  </tr>
  <tr>
+   <td >&nbsp;</td>
+   <td valign=top>
+   <?php include('menu.php');
+   ?></tr></td>
+   <tr>
+     
+ <td><div id="corps.php"><?php
+   include('corps.php');
+    ?>
 
- <td><div id="corps"><?php  
-   include('cutenews/show_news.php');  
-    ?> 
-	
 	</div></td>
-	 <td >&nbsp;</td>
-	<td valign=top>
-<?php include('menu.php');
-?></div></td>
+	 </div></td>
  </tr>
  <tr>
  <td heigh=20px> &nbsp;  </td>
